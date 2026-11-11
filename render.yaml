@@ -1,0 +1,16 @@
+# Blueprint de Render: se construye desde la raiz del repositorio y ejecuta solo backend/
+services:
+  - type: web
+    name: recomendador-residencias
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/v1/salud
+    envVars:
+      # Tambien fijada en .python-version
+      - key: PYTHON_VERSION
+        value: 3.12.1
+      # Render la pide al crear el servicio; debe ser igual a RECOMENDACIONES_API_KEY en Spring Boot
+      - key: API_KEY
+        sync: false

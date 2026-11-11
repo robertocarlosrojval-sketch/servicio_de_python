@@ -1,0 +1,20 @@
+# Entorno virtual
+mi-entorno/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Secretos
+.env
+
+# Datos originales (se descargan de Kaggle; no hacen falta para desplegar)
+analisis/data/raw/
+
+# Editor y sistema
+.vscode/
+Thumbs.db
+desktop.ini

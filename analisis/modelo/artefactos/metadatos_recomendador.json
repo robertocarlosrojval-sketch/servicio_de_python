@@ -1,0 +1,40 @@
+{
+  "modelo": "Recomendador de proyectos y habilidades",
+  "datos_entrenamiento": {
+    "fuente": "LinkedIn Software Engineering Jobs (Kaggle)",
+    "vacantes": 6204,
+    "habilidades": 1263
+  },
+  "emparejamiento": {
+    "representacion": "LSA (100 dim.)",
+    "precision_familia@10": 0.3927,
+    "precision_azar": 0.1427
+  },
+  "sugerencias": {
+    "metodo": "kNN TF-IDF (k=20)",
+    "k_vecinos": 20,
+    "precision@10": 0.1506,
+    "recall@10": 0.3838
+  },
+  "perfiles": {
+    "k": 10,
+    "silueta": 0.0744,
+    "nombres": [
+      "Backend Java",
+      "Cloud y DevOps",
+      "Desarrollo .NET",
+      "Sistemas y C/C++",
+      "Full stack JavaScript",
+      "Frontend web",
+      "Calidad y pruebas",
+      "Desarrollo embebido",
+      "Datos e IA",
+      "Otros"
+    ]
+  },
+  "categorias_excluidas": [
+    "Competencias blandas",
+    "Conceptos generales"
+  ],
+  "version_sklearn": "1.9.1"
+}

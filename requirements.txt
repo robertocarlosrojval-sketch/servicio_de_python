@@ -1,0 +1,3 @@
+# Dependencias de produccion para desplegar desde la raiz del repositorio (Render).
+# La lista real esta en backend/requirements.txt; las del analisis estan en requerimientos.txt.
+-r backend/requirements.txt

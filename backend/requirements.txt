@@ -1,0 +1,8 @@
+# Dependencias de produccion del microservicio (versiones fijas para despliegues reproducibles)
+fastapi==0.161.1
+uvicorn==0.54.0
+pydantic==2.14.1
+numpy==2.5.4
+scipy==1.18.1
+# Debe ser la misma version con la que se entreno el .pkl (ver artefactos/metadatos_recomendador.json)
+scikit-learn==1.9.1
